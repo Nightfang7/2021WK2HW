@@ -1,0 +1,237 @@
+#main {
+    padding: 4em 0 2em 0;
+}
+
+body {
+    background-color: rgb(44,44,44);
+}
+
+.bg_img{
+    background-image: url("/img/背景菱形網.png");  
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+#one1 {
+    background-color: rgb(44,44,44,0.8);  
+    padding: 6em 0 4em 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+}
+
+/* #one1 .inner{
+    background: url(/img/催毀中的城市.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+#one1 .title{
+    display: flex;
+}
+
+#one1 .title_img1{
+    margin: auto 1em auto 1em ;
+}
+
+#one1 .title_img2{
+    margin: auto auto auto 1em ;
+}
+
+#one1 h1{
+    font-family: Bellota Text;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    letter-spacing: 0.3em;
+}
+
+.site-wrap .slide-in{
+    width: 40%;
+}
+
+#one1 header{
+    height: 45px;
+}
+
+/* #one1 .inner h2{
+    left: -300px;
+    position:absolute;
+    animation-name: slidein;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    z-index: 2;
+} */
+
+/* #one .bold_line{
+    background: linear-gradient(-60deg,transparent 25px,white 0)bottom right;
+    width: 240px;
+    height: 45px;
+    opacity: 30%;
+    z-index: 1;
+    position:absolute;
+    animation-name: slidein2;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+
+#one .thin_line{
+    background: linear-gradient(-60deg,transparent 25px,white 0)bottom right;
+    margin-top: 38px;
+    width: 150px;
+    height: 2px;
+    z-index: 1;
+    position:absolute;
+    animation-name: slidein_r;
+    animation-duration:2s;
+    animation-fill-mode:forwards; 
+}*/
+@media (min-width:1680px){
+    #one1 header{
+        
+        height: 45px;
+    }
+
+    #one1 .inner h2{
+        
+        animation-name: slidein3;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+    }
+    /* #one .bold_line{
+        width: 200px;
+        height: 45px;
+        animation-name: slidein3;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+    }
+    #one .thin_line{
+        margin-top: 40px;
+        width: 150px;
+        position:absolute;
+        animation-name: slidein_r2;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+    } */
+ }
+@media (max-width:768px){
+    #one1 header{
+        
+        height: 40px;
+    }
+    /* #one .bold_line{
+        width: 180px;
+        height: 40px;
+    }
+    #one .thin_line{
+        margin-top: 35px;
+        width: 120px;
+    } */
+ }
+ @media (max-width:736px){
+    #one1 header{
+        height: 35px;
+    }
+    /* #one .bold_line{
+        width: 110px;
+        height: 35px;
+    }
+    #one .thin_line{
+        margin-top: 30px;
+        width: 70px;
+
+        animation-name: slidein3;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+    } */
+ }
+
+
+
+@keyframes slidein{
+    0%{
+        left:0;
+    }
+    100%{
+        left:10%;
+    }
+}
+@keyframes slidein2{
+    0%{
+        left:-200px;
+    }
+    100%{
+        left:0%;
+    }
+}
+@keyframes slidein3{
+    0%{
+        left:-200px;
+    }
+    100%{
+        left:20%;
+    }
+}
+@keyframes slidein_r{
+    0%{
+        right:60%;
+    }
+    100%{
+        right: 75%;
+    }
+}
+@keyframes slidein_r2{
+    0%{
+        right:50%;
+    }
+    100%{
+        right: 70%;
+    }
+}
+
+#one1 p strong{
+    font-size: 32px;
+}
+
+
+
+#one1 p{
+    font-family: Bellota Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 60px;
+    /* display: flex; */
+    align-items: flex-end;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+    @media screen and (max-width: 980px) {
+
+        #one1 {
+            padding: 4em 0 2em 0;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #one1 {
+            padding: 2em 0 0.1em 0;
+        }
+        #one1 p strong{
+            font-size: 18px;
+        }
+        #one1 p{
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+    }
